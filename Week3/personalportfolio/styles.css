@@ -1,0 +1,221 @@
+/*
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+*/
+* {
+--baseColor: #ffa9e7ff;
+--borderColor: #ff84e8ff;
+--cardColors: #7f2ccbff;
+--accentColor: #414361ff;
+--extraColor: #2a2d43ff;
+color: white;
+font-family: "Outfit", sans-serif;
+text-shadow: 2px 2px 2px var(--extraColor);
+}
+
+body {
+    background-color: #ff84e8ff;
+    background-image: url('./assets/wavesBackground.png');
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+}
+/* header box */
+header {
+    background-color: var(--cardColors);
+    padding-top: 16px;
+    text-align: center;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: whitesmoke;
+}
+
+
+
+header > span {
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    opacity: .82;
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes myAnimation{
+    0% {color: rgb(255, 79, 217);}
+    25% {color: rgb(255, 127, 227);}
+    50% {color: rgb(255, 167, 236);}
+    75% {color: rgb(255, 200, 230);}
+    100% {color: rgb(253, 112, 223);}
+}
+
+/* quote */
+.title{
+    background-color: rgba(255, 78, 181, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    margin-bottom: 32px;
+    line-height: 84px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px var(--extraColor);
+    transition: all .3s;
+}
+/* quote hover */
+.title:hover {
+    box-shadow: 10px 10px var(--accentColor);
+    transform: translate(-10px, -10px);
+    
+}
+/* hobbies title */
+h1{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-shadow: 4px 3px 0px var(--extraColor);
+    text-align: center;
+    background-color: var(--cardColors);
+}
+
+/* section titles (minus hobbies) */
+h2{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-shadow: 3px 2px 0px var(--extraColor);
+    text-align: center;
+    background-color: var(--cardColors);
+}
+
+/* explore button */
+#explore {
+    background-color: rgba(255, 78, 181, 0.5);
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    border: 2px solid whitesmoke;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s;
+}
+#explore:hover {
+    background-color: rgb(184, 4, 255);
+    border-color: white;
+    transform: scale(1.1);
+}
+/* email */
+h3{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #FFF;
+    text-shadow: 2px 1px 0px var(--extraColor);
+    background-color: var(--cardColors);
+    opacity: .82;
+}
+
+/* favorite things images */
+.cards div > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px var(--accentColor);
+}
+/* favorite things boxes */
+.cards > div {
+    background-color: none;
+    padding: 16px;
+    border: .5px;
+    border-radius: 4px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    transition: all .3s;
+}
+
+
+
+.cards > div:hover {
+    box-shadow: 10px 10px var(--accentColor);
+    background-color: rgb(184, 4, 255);
+    transform: translate(-10px, -10px);
+}
+/* education boxes */
+.education > ul > li {
+    background-color: rgba(255, 78, 181, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align:center;
+    font-size: 24px;
+    margin-bottom: 32px;
+    list-style-image: url(./assets/ffArrowRWhite.svg);
+}
+.education > ul > li:hover {
+    background-color: rgba(255, 78, 181, 0.7);
+    list-style-image: url(./assets/ffArrowR.svg);
+    margin-left: 20px;
+}
+
+.year {
+    color: var(--accentColor);
+}
+footer > h2 {
+    animation: fade-in .7s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
